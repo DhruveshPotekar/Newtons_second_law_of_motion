@@ -7,9 +7,9 @@ t = [0 5];
 y0 = [0 1];
 
 %ode45 is a ODE solver. 
-%Syntax[t,y] = ode45(odefun,tspan,y0), where tspan = [t0 tf], integrates the system of differential equations y?=f(t,y) from t0 to tf with initial conditions y0.
-%The ode45 can only solve a ?rst order ODE.
-%Therefore to solve a higher order ODE, the ODE has to be ?rst converted to a set of ?rst order ODEs.
+%Syntax[t,y] = ode45(odefun,tspan,y0), where tspan = [t0 tf], integrates the system of differential equations y'=f(t,y) from t0 to tf with initial conditions y0.
+%The ode45 can only solve a first order ODE.
+%Therefore to solve a higher order ODE, the ODE has to be first converted to a set of first order ODEs.
  
 [t,y] = ode45('odefun_second_order',t,y0);
 
